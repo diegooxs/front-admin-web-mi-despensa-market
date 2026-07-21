@@ -17,6 +17,7 @@ const navigation = [
   { to: '/inventario', label: 'Inventario', icon: 'inventory' },
   { to: '/pedidos', label: 'Pedidos', icon: 'orders' },
   { to: '/pagos', label: 'Pagos', icon: 'payments' },
+  { to: '/resenas', label: 'Reseñas', icon: 'reviews' },
   { to: '/usuarios', label: 'Usuarios', icon: 'users' },
 ]
 

@@ -8,6 +8,7 @@ import UsersView from '../views/UsersView.vue'
 import InventoryView from '../views/InventoryView.vue'
 import OrdersView from '../views/OrdersView.vue'
 import PaymentsView from '../views/PaymentsView.vue'
+import ReviewsView from '../views/ReviewsView.vue'
 import { getAccessToken } from '../services/auth'
 
 const routes = [
@@ -27,6 +28,7 @@ const routes = [
       { path: 'inventario', name: 'inventory', component: InventoryView, meta: { title: 'Inventario' } },
       { path: 'pedidos', name: 'orders', component: OrdersView, meta: { title: 'Pedidos' } },
       { path: 'pagos', name: 'payments', component: PaymentsView, meta: { title: 'Pagos' } },
+      { path: 'resenas', name: 'reviews', component: ReviewsView, meta: { title: 'Reseñas' } },
       { path: 'usuarios', name: 'users', component: UsersView, meta: { title: 'Usuarios' } },
     ],
   },

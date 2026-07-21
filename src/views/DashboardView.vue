@@ -108,7 +108,7 @@ const maxBuyerTotal = computed(() =>
 
 const userFor = (id) => users.value.find((user) => user.id === id)
 const shortId = (id) => `#PED-${String(id).slice(-4).toUpperCase()}`
-const states = { pagado: 'Pagado', enviado: 'Enviado', entregado: 'Entregado', cancelado: 'Cancelado' }
+const states = { pendiente: 'Pendiente', pagado: 'Pagado', enviado: 'Enviado', entregado: 'Entregado', cancelado: 'Cancelado' }
 const date = (value) => new Intl.DateTimeFormat('es-MX', { day: '2-digit', month: 'short' }).format(new Date(value))
 const chartHeight = (units) => `${Math.max((units / Math.max(maxSoldUnits.value, 1)) * 100, 12)}%`
 const buyerBarWidth = (total) => `${Math.max((total / Math.max(maxBuyerTotal.value, 1)) * 100, 10)}%`

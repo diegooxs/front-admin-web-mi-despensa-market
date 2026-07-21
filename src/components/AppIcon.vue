@@ -10,6 +10,7 @@ defineProps({ name: { type: String, required: true }, size: { type: Number, defa
     <template v-else-if="name === 'inventory'"><path d="M3 10l9-6 9 6v10H3z"/><path d="M8 20v-6h8v6M7 10h10"/></template>
     <template v-else-if="name === 'orders'"><path d="M6 3h12v18H6zM9 7h6M9 11h6M9 15h4"/><path d="M4 6h2M18 6h2M4 10h2M18 10h2"/></template>
     <template v-else-if="name === 'payments'"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M7 9H5M19 15h-2"/></template>
+    <template v-else-if="name === 'reviews'"><path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1L12 16.9l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3z"/><path d="M8 22h8"/></template>
     <template v-else-if="name === 'users'"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-4 2-6 6-6s6 2 6 6M16 5a3 3 0 010 6M16 14c3 0 5 2 5 6"/></template>
     <template v-else-if="name === 'search'"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></template>
     <template v-else-if="name === 'logout'"><path d="M10 4H4v16h6M14 8l4 4-4 4M8 12h10"/></template>

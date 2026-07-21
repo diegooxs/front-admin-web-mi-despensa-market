@@ -11,7 +11,7 @@ const error = ref('')
 const selected = ref(null)
 const nextStatus = ref('pagado')
 const filter = ref('')
-const states = { pagado: 'Pagado', enviado: 'Enviado', entregado: 'Entregado', cancelado: 'Cancelado' }
+const states = { pendiente: 'Pendiente', pagado: 'Pagado', enviado: 'Enviado', entregado: 'Entregado', cancelado: 'Cancelado' }
 const visibleOrders = computed(() => filter.value ? orders.value.filter((order) => order.estado === filter.value) : orders.value)
 const userFor = (id) => users.value.find((user) => user.id === id)
 const addressFor = (id) => addresses.value.find((address) => address.id === id)
